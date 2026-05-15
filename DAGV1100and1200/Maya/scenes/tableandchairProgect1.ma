@@ -1,6 +1,6 @@
 //Maya ASCII 2027 scene
 //Name: tableandchairProgect1.ma
-//Last modified: Fri, May 15, 2026 02:35:46 AM
+//Last modified: Fri, May 15, 2026 02:43:44 AM
 //Codeset: 1252
 requires maya "2027";
 requires "mtoa" "5.6.0";
@@ -10,21 +10,21 @@ fileInfo "product" "Maya 2027";
 fileInfo "version" "2027";
 fileInfo "cutIdentifier" "202603302215-e16e754b0e";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26200)";
-fileInfo "UUID" "345FB5D2-46CB-74FA-830A-5EA8AC6DB3C6";
+fileInfo "UUID" "97FC77AD-417A-64D5-8746-DA9067734525";
 createNode transform -s -n "persp";
 	rename -uid "9B9A5217-460F-4675-D4B6-788C3F99866A";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 47.377750601197164 42.159707803525549 55.950273151663538 ;
-	setAttr ".r" -type "double3" -32.73835278387574 -675.79999999976019 -2.2182365887289839e-15 ;
+	setAttr ".t" -type "double3" 28 21 28 ;
+	setAttr ".r" -type "double3" -27.938352729602379 44.999999999999972 -5.172681101354183e-14 ;
+	setAttr ".rpt" -type "double3" 8.347110945428351e-16 -1.1852476066634108e-16 -3.0048114325141634e-17 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "97EE65EE-486B-4B1F-1F95-6FA4240EDB13";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 78.577929444410117;
+	setAttr ".coi" 44.82186966202994;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
-	setAttr ".tp" -type "double3" 0.54260134696960449 2.6417422000100554 -6.4880102120746344 ;
 	setAttr ".hc" -type "string" "viewSet -p %camera";
 createNode transform -s -n "top";
 	rename -uid "89A62117-4EE0-0C8D-8421-B69666335A85";
@@ -9551,7 +9551,7 @@ createNode lightLinker -s -n "lightLinker1";
 	setAttr -s 2 ".slnk";
 createNode displayLayerManager -n "layerManager";
 	rename -uid "461B1416-4F6A-E81E-B789-7CA576C0EA87";
-	setAttr ".cdl" 3;
+	setAttr ".cdl" 4;
 	setAttr -s 5 ".dli[1:4]"  1 2 3 4;
 	setAttr -s 2 ".dli";
 createNode displayLayer -n "defaultLayer";
@@ -9568,7 +9568,6 @@ createNode poseInterpolatorManager -n "poseInterpolatorManager";
 	rename -uid "66F25A29-4F27-C110-FF42-95A9F4C8B4CB";
 createNode displayLayer -n "Floorlyr";
 	rename -uid "D46AA9B6-4816-D0D8-E525-6B82E60234E2";
-	setAttr ".dt" 1;
 	setAttr ".ufem" -type "stringArray" 0  ;
 	setAttr ".do" 1;
 createNode script -n "uiConfigurationScriptNode";
